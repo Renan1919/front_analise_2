@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    line-height: 1.7;
+    color: #f0f0f0; 
+    background: linear-gradient(110deg, hsl(293, 65%, 53%), lab(27.54% 17.78 -32.4));
+    background-attachment: fixed; 
+}
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2,
+h3 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+.intro-texto {
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto 40px auto;
+    font-size: 1.1em;
+    color: #e0e0e0;
+}
+
+.imagem-principal {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 20px auto 40px auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); 
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 40px auto;
+    width: 80%;
+}
+
+.galeria-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    background-color: transparent;
+}
+
+article.galeria-item {
+    width: 550px;
+    min-height: 220px;
+    margin: 15px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article.galeria-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.foto-galeria {
+    width: 220px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.galeria-item-descricao {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.galeria-item-descricao h4 {
+    margin: 0 0 10px 0;
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #004D40;
+}
+
+.galeria-item-descricao p {
+    margin: 0;
+    font-size: 0.95em;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    h2 { font-size: 2em; }
+    h3 { font-size: 1.6em; }
+
+    article.galeria-item {
+        flex-direction: column;
+        width: 95%;
+        height: auto;
+    }
+
+    .foto-galeria {
+        width: 100%;
+        height: 200px;
+    }
+
+    .galeria-item-descricao {
+        padding: 20px;
+    }
+}
