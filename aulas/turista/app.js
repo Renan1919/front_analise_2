@@ -1,4 +1,4 @@
-const lugares = ['praia', 'montanha', '']
+const lugares = ['praia', 'montanha', 'cachoeira']
 const mensagem = `
         -- ROTEIRO DE VIAGENS -- 
         Lugares: ${lugares}
@@ -15,6 +15,9 @@ if (escolhaUsuario == null || escolhaUsuario == '') {
         } else if (escolhaUsuario == 'montanha') {
             //alert('Montanha...!!')
             window.location.href = './montanha.html'
+        } else if (escolhaUsuario == 'cachoeira') {
+            //alert('Cachoeira...!!')
+            window.location.href = './cachoeira.html'
         }
     }
 }
