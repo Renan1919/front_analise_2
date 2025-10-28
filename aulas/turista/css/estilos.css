@@ -9,9 +9,9 @@
 body {
     font-family: 'Poppins', Arial, sans-serif;
     line-height: 1.7;
-    color: #f0f0f0; 
+    color: #f0f0f0;
     background: linear-gradient(110deg, hsl(293, 65%, 53%), lab(27.54% 17.78 -32.4));
-    background-attachment: fixed; 
+    background-attachment: fixed;
 }
 
 .container {
@@ -51,7 +51,7 @@ h3 {
     display: block;
     margin: 20px auto 40px auto;
     border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 hr {
@@ -120,8 +120,13 @@ article.galeria-item:hover {
         padding: 10px;
     }
 
-    h2 { font-size: 2em; }
-    h3 { font-size: 1.6em; }
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.6em;
+    }
 
     article.galeria-item {
         flex-direction: column;
@@ -137,4 +142,22 @@ article.galeria-item:hover {
     .galeria-item-descricao {
         padding: 20px;
     }
+}
+
+button {
+    margin-top: 30px;
+    background-color: white;
+    color: #1e3c72;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #1e3c72;
+    color: white;
+    transform: scale(1.05);
 }
