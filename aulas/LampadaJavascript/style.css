@@ -1,0 +1,26 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-color: grey;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  overflow: hidden;
+  align-items: center;
+}
+
+.box button {
+  width: 100%;
+  background-color: #ade534;
+  cursor: pointer;
+  color: #111e10;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.box button:hover {
+  background-color: green;
+}
