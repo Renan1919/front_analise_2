@@ -57,7 +57,7 @@ function divisao(n1, n2) {
     }
     return n1 / n2
 }
-const resultadoDivisao = divisao(500, 5)
+const resultadoDivisao = divisao(500, 0)
 console.log(`Divisão: ${resultadoDivisao}`)
 
 
